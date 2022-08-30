@@ -1,29 +1,18 @@
 import AddIcon from '@mui/icons-material/Add';
-import DeleteIcon from '@mui/icons-material/Delete';
 import SearchIcon from '@mui/icons-material/Search';
 import './App.css';
 import {
   Autocomplete,
   Button,
-  Card,
-  CardContent,
-  Checkbox,
   CssBaseline,
-  Divider,
-  FormControlLabel,
-  FormGroup,
-  IconButton,
   InputAdornment,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemText,
   Stack,
   TextField,
-  Typography,
   styled
 } from '@mui/material';
 import React from 'react';
+
+import { NotificationDetails, NotificationTable } from '../components';
 
 import styles from './App.styles';
 
@@ -58,60 +47,9 @@ function App() {
             ADD NEW
           </Button>
         </Stack>
-        <List>
-          <ListItem
-            secondaryAction={
-              <IconButton edge="end">
-                <DeleteIcon />
-              </IconButton>
-            }
-            disablePadding>
-            <ListItemButton>
-              <ListItemText primary="Name of notification 1" />
-            </ListItemButton>
-          </ListItem>
-          <Divider component="li" />
-          <ListItem
-            secondaryAction={
-              <IconButton edge="end">
-                <DeleteIcon />
-              </IconButton>
-            }
-            disablePadding>
-            <ListItemButton>
-              <ListItemText primary="Name of notification 2" />
-            </ListItemButton>
-          </ListItem>
-          <Divider component="li" />
-          <ListItem
-            secondaryAction={
-              <IconButton edge="end">
-                <DeleteIcon />
-              </IconButton>
-            }
-            disablePadding>
-            <ListItemButton>
-              <ListItemText primary="Name of notification 3" />
-            </ListItemButton>
-          </ListItem>
-        </List>
+        <NotificationTable></NotificationTable>
       </div>
-      <Card sx={{ maxHeight: 275 }}>
-        <CardContent>
-          <Typography variant="h5">Details of the notification</Typography>
-          <Typography>City name: Budapest</Typography>
-          <Typography>Current temperature: 33°C</Typography>
-          <Typography>Notification temperature: 10°C</Typography>
-          <Typography>Message: Put on a coat!</Typography>
-          <FormGroup>
-            <FormControlLabel
-              control={<Checkbox defaultChecked />}
-              label="Email: "
-              labelPlacement="start"
-            />
-          </FormGroup>
-        </CardContent>
-      </Card>
+      <NotificationDetails></NotificationDetails>
     </AppContainer>
   );
 }
