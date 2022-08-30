@@ -8,6 +8,7 @@ import {
   Card,
   CardContent,
   Checkbox,
+  CssBaseline,
   Divider,
   FormControlLabel,
   FormGroup,
@@ -31,6 +32,7 @@ const AppContainer = styled(Stack)(styles);
 function App() {
   return (
     <AppContainer direction="row" spacing={2}>
+      <CssBaseline />
       <div>
         <Stack direction="row" spacing={2}>
           <Autocomplete
