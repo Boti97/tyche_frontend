@@ -1,28 +1,29 @@
-import React from 'react';
+import AddIcon from '@mui/icons-material/Add';
 import DeleteIcon from '@mui/icons-material/Delete';
 import SearchIcon from '@mui/icons-material/Search';
-import AddIcon from '@mui/icons-material/Add';
 import './App.css';
 import {
   Autocomplete,
-  IconButton,
-  ListItemText,
-  ListItemButton,
-  ListItem,
-  List,
-  TextField,
-  InputAdornment,
-  Stack,
+  Button,
   Card,
   CardContent,
-  Typography,
-  FormControlLabel,
   Checkbox,
-  FormGroup,
-  styled,
   Divider,
-  Button
+  FormControlLabel,
+  FormGroup,
+  IconButton,
+  InputAdornment,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
+  Stack,
+  TextField,
+  Typography,
+  styled
 } from '@mui/material';
+import React from 'react';
+
 import styles from './App.styles';
 
 const AppContainer = styled(Stack)(styles);

@@ -23,6 +23,23 @@
     ],
     "rules": {
         "react/react-in-jsx-scope": "off",
-        "@typescript-eslint/explicit-function-return-type": "off"
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "import/order": [
+            "error",
+            {
+              "groups": ["external", "internal", "parent", "sibling", "index"],
+              "newlines-between": "always",
+              "alphabetize": {
+                "order": "asc",
+                "caseInsensitive": true
+              }
+            }
+        ],
+        "sort-imports": [
+            "error",
+            {
+              "ignoreDeclarationSort": true
+            }
+        ]
     }
 }
