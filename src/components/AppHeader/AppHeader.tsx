@@ -6,9 +6,9 @@ const AppHeaderRoot = styled(Box)(styles);
 
 const AppHeader = () => {
   return (
-    <AppHeaderRoot sx={{ flexGrow: 1, paddingBottom: 1 }}>
-      <AppBar position="static">
-        <Toolbar disableGutters>
+    <AppHeaderRoot sx={{ flexGrow: 1 }}>
+      <AppBar position="static" elevation={3}>
+        <Toolbar variant="dense">
           <IconButton edge="start" color="inherit" sx={{ mr: 2 }}>
             <MenuIcon />
           </IconButton>

@@ -1,6 +1,5 @@
 import DeleteIcon from '@mui/icons-material/Delete';
 import { Divider, IconButton, List, ListItem, ListItemButton, ListItemText } from '@mui/material';
-import React from 'react';
 
 const NotificationTable = () => {
   return (

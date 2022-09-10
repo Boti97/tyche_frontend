@@ -1,6 +1,5 @@
 import './App.css';
-import { CssBaseline, Grid, styled } from '@mui/material';
-import React from 'react';
+import { CssBaseline, Grid, Paper, styled } from '@mui/material';
 
 import { AppHeader, NotificationDetails, NotificationTable } from '../components';
 
@@ -13,12 +12,16 @@ function App() {
     <AppContainer>
       <CssBaseline />
       <AppHeader></AppHeader>
-      <Grid container spacing={2}>
-        <Grid item xs={6} md={8}>
-          <NotificationTable></NotificationTable>
+      <Grid container>
+        <Grid item xs={8}>
+          <Paper className={'paperStyles'} elevation={3}>
+            <NotificationTable></NotificationTable>
+          </Paper>
         </Grid>
-        <Grid item xs={6} md={4}>
-          <NotificationDetails></NotificationDetails>
+        <Grid item xs={4}>
+          <Paper className={'paperStyles'} elevation={3}>
+            <NotificationDetails></NotificationDetails>
+          </Paper>
         </Grid>
       </Grid>
     </AppContainer>
