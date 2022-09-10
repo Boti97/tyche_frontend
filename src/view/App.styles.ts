@@ -4,7 +4,6 @@ export default () => ({
   height: '100vh',
   width: '100%',
   backgroundColor: '#A6D9F7',
-  padding: '30px',
 
   '& .viewContainer': {
     overflow: 'auto',
