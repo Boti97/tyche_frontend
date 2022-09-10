@@ -3,18 +3,12 @@ import {} from '@mui/system';
 export default () => ({
   height: '100vh',
   width: '100%',
-  backgroundColor: '#A6D9F7',
-  padding: '30px',
+  backgroundColor: '#E2F3FD',
 
-  '& .viewContainer': {
-    overflow: 'auto',
-    flex: 1
+  '& .paperStyles': {
+    backgroundColor: '#FFFFFF'
   },
-  '& .MuiFormControl-root': {
-    backgroundColor: '#FFFFFF',
-    borderRadius: 4
-  },
-  '& .MuiStack-root': {
-    height: '5px'
+  '& .MuiGrid-root': {
+    padding: 10
   }
 });
