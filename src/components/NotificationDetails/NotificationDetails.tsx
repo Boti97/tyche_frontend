@@ -4,7 +4,7 @@ export {};
 
 const NotificationDetails = () => {
   return (
-    <Paper>
+    <Paper role="NotificationDetails">
       <Typography>Details of the notification</Typography>
       <Typography>City name: Budapest</Typography>
       <Typography>Current temperature: 33°C</Typography>

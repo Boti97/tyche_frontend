@@ -3,7 +3,7 @@ import { Divider, IconButton, List, ListItem, ListItemButton, ListItemText } fro
 
 const NotificationTable = () => {
   return (
-    <List>
+    <List role="NotificationTable">
       <ListItem
         secondaryAction={
           <IconButton edge="end">
